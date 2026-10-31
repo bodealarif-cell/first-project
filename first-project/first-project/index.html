@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>المشروع الأول | عطر يُرَش بقبضة اليد</title>
+  <meta name="description" content="مشروع عطور يعيد تصميم تجربة الرش بمقبض جانبي ونقطة ارتكاز داخلية، مع خطة نمو مالي ومنظومة بيزنس متكاملة.">
+  <meta name="theme-color" content="#000000">
+  <meta property="og:title" content="المشروع الأول | عطر يُرَش بقبضة اليد">
+  <meta property="og:locale" content="ar_EG">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">تخطَّ إلى المحتوى</a>
+
+  <!-- أيقونات المنظومة (Sprite) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="i-bottle" viewBox="0 0 24 24"><path d="M10 3h4v3h-4zM8 6h8l1 4v10a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1V10z"/></symbol>
+    <symbol id="i-flask" viewBox="0 0 24 24"><path d="M9 3h6M10 3v6l-5 9a2 2 0 0 0 1.8 3h10.4a2 2 0 0 0 1.8-3l-5-9V3M7.5 15h9"/></symbol>
+    <symbol id="i-gear" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3.2"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.3 5.3l2.1 2.1M16.6 16.6l2.1 2.1M18.7 5.3l-2.1 2.1M7.4 16.6l-2.1 2.1"/></symbol>
+    <symbol id="i-box" viewBox="0 0 24 24"><path d="M3 7.5 12 3l9 4.5v9L12 21l-9-4.5zM3 7.5l9 4.5 9-4.5M12 12v9"/></symbol>
+    <symbol id="i-megaphone" viewBox="0 0 24 24"><path d="M3 11v2a1 1 0 0 0 1 1h2l5 4V6L6 10H4a1 1 0 0 0-1 1zM15 9a4 4 0 0 1 0 6M18 6.5a8 8 0 0 1 0 11"/></symbol>
+    <symbol id="i-palette" viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 0 18c1.5 0 2-1 1.5-2s0-2 1.5-2h2a3 3 0 0 0 3-3A9 9 0 0 0 12 3z"/><circle cx="7.5" cy="11" r="1"/><circle cx="10" cy="7" r="1"/><circle cx="15" cy="7.5" r="1"/></symbol>
+    <symbol id="i-truck" viewBox="0 0 24 24"><path d="M2 6h11v10H2zM13 9h4l4 3v4h-8z"/><circle cx="6.5" cy="18" r="2"/><circle cx="17.5" cy="18" r="2"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><rect x="7" y="2.5" width="10" height="19" rx="2.5"/><path d="M11 18.5h2"/></symbol>
+  </svg>
+
+  <!-- ================= شريط التنقل ================= -->
+  <header class="site-nav">
+    <div class="site-nav__inner">
+      <a class="site-nav__brand" href="#hero">المشروع الأول</a>
+      <nav class="site-nav__links" id="nav-links" aria-label="التنقل الرئيسي">
+        <a href="#bottle">الزجاجة</a>
+        <a href="#system">المنظومة</a>
+        <a href="#chemistry">العطر</a>
+        <a href="#finance">الأرقام</a>
+        <a href="#risks">التحديات</a>
+      </nav>
+      <button class="site-nav__toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="فتح القائمة">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ================= الواجهة ================= -->
+    <section id="hero" class="hero theme-dark" aria-labelledby="hero-title">
+      <div class="container">
+        <h1 id="hero-title" class="display hero__title">عطر يُرَش بقبضة اليد.</h1>
+        <p class="lead hero__sub">مقبض رش جانبي ونقطة ارتكاز داخلية يعيدان تصميم تجربة العطر من أول لمسة، ومعهما خطة نمو مالي ومنظومة بيزنس متكاملة.</p>
+        <div class="hero__actions">
+          <a class="btn" href="#bottle">اكتشف الزجاجة</a>
+          <a class="link-more" href="#finance">شاهد خطة النمو</a>
+        </div>
+      </div>
+
+      <div class="hero__stage">
+        <svg id="bottle" class="bottle" viewBox="0 0 520 580" role="group" aria-labelledby="bottle-title">
+          <title id="bottle-title">رسم توضيحي لزجاجة العطر بمقبض الرش الجانبي</title>
+          <defs>
+            <linearGradient id="g-glass" x1="0" x2="1">
+              <stop offset="0" stop-color="#fff" stop-opacity=".24"/>
+              <stop offset=".45" stop-color="#fff" stop-opacity=".05"/>
+              <stop offset="1" stop-color="#fff" stop-opacity=".16"/>
+            </linearGradient>
+            <linearGradient id="g-liquid" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#ecd49b"/>
+              <stop offset=".55" stop-color="#c29a52"/>
+              <stop offset="1" stop-color="#7d5b25"/>
+            </linearGradient>
+            <linearGradient id="g-metal" x1="0" x2="1">
+              <stop offset="0" stop-color="#48484a"/>
+              <stop offset=".3" stop-color="#d1d1d6"/>
+              <stop offset=".55" stop-color="#8e8e93"/>
+              <stop offset="1" stop-color="#3a3a3c"/>
+            </linearGradient>
+            <radialGradient id="g-mist">
+              <stop offset="0" stop-color="#fff6dc" stop-opacity=".9"/>
+              <stop offset=".6" stop-color="#f3e6c4" stop-opacity=".35"/>
+              <stop offset="1" stop-color="#f3e6c4" stop-opacity="0"/>
+            </radialGradient>
+            <radialGradient id="g-floor">
+              <stop offset="0" stop-color="#d6b66f" stop-opacity=".38"/>
+              <stop offset="1" stop-color="#d6b66f" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+
+          <ellipse cx="200" cy="548" rx="180" ry="22" fill="url(#g-floor)"/>
+
+          <!-- الجسم والسائل -->
+          <rect x="100" y="150" width="200" height="380" rx="38" fill="url(#g-glass)" stroke="rgba(255,255,255,.38)" stroke-width="1.5"/>
+          <rect x="114" y="270" width="172" height="246" rx="28" fill="url(#g-liquid)" opacity=".95"/>
+          <path d="M128 283h144" stroke="rgba(255,255,255,.55)" stroke-width="2" stroke-linecap="round"/>
+          <rect x="122" y="176" width="10" height="320" rx="5" fill="#fff" opacity=".14"/>
+
+          <!-- الرأس: الغطاء والفوهة -->
+          <g class="head">
+            <rect x="170" y="118" width="60" height="40" rx="6" fill="url(#g-metal)"/>
+            <rect x="158" y="40" width="84" height="84" rx="14" fill="url(#g-metal)"/>
+            <rect x="140" y="72" width="26" height="12" rx="6" fill="#2c2c2e"/>
+          </g>
+
+          <!-- الرذاذ -->
+          <g class="mist" fill="url(#g-mist)" aria-hidden="true">
+            <circle cx="140" cy="78" r="12"  style="--dx:-70px;--dy:-24px;--s:2.2;--d:0s"/>
+            <circle cx="140" cy="78" r="18"  style="--dx:-110px;--dy:-6px;--s:2.8;--d:.05s"/>
+            <circle cx="140" cy="78" r="10"  style="--dx:-90px;--dy:22px;--s:2.4;--d:.1s"/>
+            <circle cx="140" cy="78" r="16"  style="--dx:-135px;--dy:-30px;--s:3;--d:.14s"/>
+            <circle cx="140" cy="78" r="12"  style="--dx:-150px;--dy:10px;--s:3.2;--d:.2s"/>
+            <circle cx="140" cy="78" r="20" style="--dx:-120px;--dy:34px;--s:2.6;--d:.26s"/>
+            <circle cx="140" cy="78" r="10"  style="--dx:-170px;--dy:-12px;--s:3.4;--d:.32s"/>
+          </g>
+
+          <!-- ذراع الرش الجانبي ونقطة الارتكاز -->
+          <g id="lever" class="lever" role="button" tabindex="0" aria-label="الذراع الجانبي: اضغط لتجربة الرش">
+            <rect x="300" y="160" width="76" height="190" fill="transparent"/>
+            <rect class="lever__arm" x="318" y="178" width="24" height="150" rx="12" fill="url(#g-metal)" stroke="rgba(255,255,255,.25)"/>
+            <circle cx="330" cy="318" r="9" fill="#d6b66f" stroke="#1d1d1f" stroke-width="3"/>
+          </g>
+
+          <!-- التسميات -->
+          <g aria-hidden="true">
+            <path d="M348 198h24" stroke="rgba(255,255,255,.3)"/>
+            <text class="bottle__label" x="380" y="203">ذراع الرش الجانبي</text>
+            <path d="M342 318h30" stroke="rgba(255,255,255,.3)"/>
+            <text class="bottle__label" x="380" y="323">نقطة الارتكاز</text>
+          </g>
+        </svg>
+        <p class="hero__hint">اضغط على الذراع الجانبي لتجرّب الرش.</p>
+      </div>
+    </section>
+
+    <!-- ================= الأرقام الرئيسية ================= -->
+    <section class="section section--tight theme-light" aria-label="أرقام المشروع">
+      <div class="container">
+        <div class="stats">
+          <div class="stat reveal">
+            <p class="stat__num"><span dir="ltr">15,000</span> ج</p>
+            <p class="stat__label">رأس المال المبدئي المستهدف</p>
+          </div>
+          <div class="stat reveal">
+            <p class="stat__num">3 شركاء</p>
+            <p class="stat__label">كحد أقصى، بمعدل 5,000 جنيه لكل مساهم</p>
+          </div>
+          <div class="stat reveal">
+            <p class="stat__num"><span dir="ltr">400–700%</span></p>
+            <p class="stat__label">نسبة الربح الصافي المستهدفة</p>
+          </div>
+          <div class="stat reveal">
+            <p class="stat__num">9 مكونات</p>
+            <p class="stat__label">تعمل معًا كمنظومة واحدة</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= الزجاجة ================= -->
+    <section id="bottle" class="section theme-light" aria-labelledby="bottle-heading" style="padding-top:0">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 id="bottle-heading" class="h2">زجاجة تفرض حضورها عند الاستخدام.</h2>
+          <p class="lead">كل زجاجات العطور تقريبًا تُضغط من الأعلى بإصبع واحد. هنا نكسر القاعدة بمفهوم يمنح الرش هيبة وقوة.</p>
+        </div>
+
+        <div class="gallery">
+          <div class="gallery__stage">
+            <div class="gallery__frame" id="gallery-frame">
+              <img id="gallery-image" src="" alt="">
+            </div>
+            <p class="gallery__caption" id="gallery-caption" aria-live="polite"></p>
+          </div>
+          <div class="gallery__thumbs" id="gallery-thumbs" role="group" aria-label="صور الزجاجة"></div>
+        </div>
+
+        <div class="tile tile--wide">
+          <h3 class="h3">كيف يعمل الرش الجانبي؟</h3>
+          <p class="body">مقبض أو ذراع رش جانبي (Side Trigger) مدمج بانسيابية مع جسد الزجاجة. تضغط بأصابع اليد مجتمعة لا بإصبع واحد، فينتقل الضغط الميكانيكي إلى <strong>نقطة ارتكاز داخلية مدروسة</strong>، ويندفع السائل العطري إلى الأعلى رذاذًا كثيفًا وناعمًا بأقل مجهود.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= مرحلتان ================= -->
+    <section id="phases" class="section theme-dark" aria-labelledby="phases-heading">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 id="phases-heading" class="h2">نطلق أولًا، ثم نرتقي بالمنتج.</h2>
+          <p class="lead">نقسّم الخطة إلى مرحلتين لنخفّض التكلفة الاستثمارية الأولى، ونبني الميكانيزم عندما يدعمنا الكاش.</p>
+        </div>
+        <div class="tiles-2">
+          <article class="tile">
+            <span class="tile__tag">الدورة الأولى والثانية</span>
+            <h3 class="h3">زجاجات كلاسيكية راقية</h3>
+            <p class="body">نبدأ الدورة التشغيلية الأولى بزجاجات فاخرة دون الميكانيزم، لنجمع الكاش ونختبر السوق.</p>
+          </article>
+          <article class="tile">
+            <span class="tile__tag">من الدورة الثالثة</span>
+            <h3 class="h3">قالب الميكانيزم الخاص بنا</h3>
+            <p class="body">مع الانتقال إلى التوسع نصنّع القالب الهندسي المخصص للميكانيزم بأعلى كفاءة وأقل تكلفة تصنيع.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= المنظومة ================= -->
+    <section id="system" class="section theme-light" aria-labelledby="system-heading">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 id="system-heading" class="h2">تسعة أجزاء. منظومة واحدة.</h2>
+          <p class="lead">المشروع كتلة متماسكة، وكل جزء فيه يقوّي الأجزاء الأخرى.</p>
+        </div>
+        <div class="cards">
+          <article class="card"><svg class="card__icon" aria-hidden="true"><use href="#i-bottle"/></svg><h3>زجاجة العطر</h3><p>الهوية البصرية والابتكار الفيزيائي الذي يجذب المستهلك من النظرة الأولى.</p></article>
+          <article class="card"><svg class="card__icon" aria-hidden="true"><use href="#i-flask"/></svg><h3>العطر نفسه</h3><p>سائل عطري من زيوت نقية ممتازة، يحقق الثبات الطويل والفوحان القوي.</p></article>
+          <article class="card"><svg class="card__icon" aria-hidden="true"><use href="#i-gear"/></svg><h3>ميكانيزم الرش</h3><p>ابتكارنا الأهم وسرّنا التجاري، القائم على مقبض اليد ونقطة الارتكاز.</p></article>
+          <article class="card"><svg class="card__icon" aria-hidden="true"><use href="#i-box"/></svg><h3>الباكيدج والتغليف</h3><p>الغطاء الخارجي الفاخر للمنتج. نصممه بدقة فور استقرار أبعاد الزجاجة النهائية.</p></article>
+          <article class="card"><svg class="card__icon" aria-hidden="true"><use href="#i-megaphone"/></svg><h3>التسويق والتمويل</h3><p>عصب البيزنس. يحتاج فهمًا عميقًا لكيفية استقطاب العميل وسط زحام المنصات الرقمية.</p></article>
+          <article class="card"><svg class="card__icon" aria-hidden="true"><use href="#i-palette"/></svg><h3>التصاميم الاحترافية</h3><p>فهم عقلية المشتري وتوجهاته، وترجمتها إلى صور وأصول بصرية لافتة.</p></article>
+          <article class="card"><svg class="card__icon" aria-hidden="true"><use href="#i-truck"/></svg><h3>شركات الشحن</h3><p>شريك لوجستي حرج. نقارن باستمرار بين السعر والسرعة وخدمات ما بعد البيع.</p></article>
+          <article class="card"><svg class="card__icon" aria-hidden="true"><use href="#i-globe"/></svg><h3>الموقع الإلكتروني</h3><p>المقر الرقمي للبراند، يسهّل الدفع المباشر والأتمتة واستقبال الطلبات وتتبعها.</p></article>
+          <article class="card"><svg class="card__icon" aria-hidden="true"><use href="#i-phone"/></svg><h3>حسابات التواصل</h3><p>حلقة الوصل اليومية مع الجمهور، وتتطلب تنسيقًا مستمرًا بين المصمم والمونتير والآدمن.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= العطر / الكيمياء ================= -->
+    <section id="chemistry" class="section theme-dark" aria-labelledby="chem-heading">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 id="chem-heading" class="h2">رائحة لا تشبه غيرها.</h2>
+          <p class="lead">كيف نصل إلى أفضل جودة بأنسب سعر بعد تجارب مخبرية مكثفة.</p>
+        </div>
+        <div class="steps">
+          <article class="step reveal">
+            <p class="step__num" aria-hidden="true">1</p>
+            <h3>نختبر كل زيت على حدة</h3>
+            <p>نشتري الزيوت العطرية والمثبتات النقية مباشرة من كبرى شركات التوزيع المعتمدة، ثم ندرس نقاء كل زيت وثباته منفردًا.</p>
+          </article>
+          <article class="step reveal">
+            <p class="step__num" aria-hidden="true">2</p>
+            <h3>نصنع النوتة الحصرية</h3>
+            <p>ندمج عطرين أو أكثر بنسب رياضية دقيقة، ونراقب سلوك المزيج بعد التعتيق لنصل إلى رائحة فريدة في السوق.</p>
+          </article>
+          <article class="step reveal">
+            <p class="step__num" aria-hidden="true">3</p>
+            <h3>نثبّت المعادلة الذهبية</h3>
+            <p>نستقر على التركيبات النهائية التي تجمع <strong>أعلى جودة وثبات فاخر</strong> مع <strong>أفضل سعر تكلفة</strong> للشركاء والمستهلكين.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= الأرقام / التوسع ================= -->
+    <section id="finance" class="section theme-light" aria-labelledby="finance-heading">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 id="finance-heading" class="h2">من رأس مال صغير إلى إنتاج يتضاعف.</h2>
+          <p class="lead">تتراوح الأرباح الإجمالية في سوق العطور عادة بين 200% و950%، ونستهدف في مشروعنا صافيًا بين 400% و700%.</p>
+        </div>
+
+        <div class="tile reveal">
+          <h3 class="h3">حجم الإنتاج في كل دورة</h3>
+          <div class="growth" role="list">
+            <div class="growth__row" role="listitem">
+              <span class="growth__name">الدورة الأولى</span>
+              <span class="growth__track"><span class="growth__fill" style="--w:11%"></span></span>
+              <span class="growth__val">15 زجاجة</span>
+            </div>
+            <div class="growth__row" role="listitem">
+              <span class="growth__name">الدورة الثانية</span>
+              <span class="growth__track"><span class="growth__fill" style="--w:33%"></span></span>
+              <span class="growth__val"><span dir="ltr">40 – 45</span> زجاجة</span>
+            </div>
+            <div class="growth__row" role="listitem">
+              <span class="growth__name">الدورة الثالثة</span>
+              <span class="growth__track"><span class="growth__fill" style="--w:100%"></span></span>
+              <span class="growth__val"><span dir="ltr">115 – 137</span> زجاجة</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tile table-wrap reveal">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">الدورة</th>
+                <th scope="col">حجم الإنتاج</th>
+                <th scope="col">تكلفة المواد الخام<br>(متوسط 280 ج للزجاجة)</th>
+                <th scope="col">الإيرادات المتوقعة<br>(سعر البيع <span dir="ltr">780 – 850</span> ج)</th>
+                <th scope="col">الخطة التشغيلية</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-label="الدورة">الدورة الأولى</td>
+                <td data-label="حجم الإنتاج">15 زجاجة<br><small>10 رجالي / 5 نسائي</small></td>
+                <td data-label="تكلفة المواد الخام">4,200 جنيه</td>
+                <td data-label="الإيرادات المتوقعة"><span dir="ltr">11,700 – 12,750</span> جنيه</td>
+                <td data-label="الخطة التشغيلية">بيع النموذج التشغيلي الأول بالكامل، وجمع الآراء، وضخ كل الأرباح فورًا في التصنيع التالي دون سحب مكاسب شخصية.</td>
+              </tr>
+              <tr>
+                <td data-label="الدورة">الدورة الثانية</td>
+                <td data-label="حجم الإنتاج"><span dir="ltr">40 – 45</span> زجاجة<br><small>تضاعف بمعدل 2.7× إلى 3×</small></td>
+                <td data-label="تكلفة المواد الخام">تمويل ذاتي بالكامل من الدورة الأولى</td>
+                <td data-label="الإيرادات المتوقعة"><span dir="ltr">31,200 – 38,250</span> جنيه</td>
+                <td data-label="الخطة التشغيلية">توسيع الحملات الإعلانية الممولة، وضبط لوجستيات الشحن بناءً على الأرباح المحققة، وتكثيف التصاميم البصرية.</td>
+              </tr>
+              <tr>
+                <td data-label="الدورة">الدورة الثالثة</td>
+                <td data-label="حجم الإنتاج"><span dir="ltr">115 – 137</span> زجاجة<br><small>توسع رأسمالي تراكمي</small></td>
+                <td data-label="تكلفة المواد الخام">تمويل توسعي من الدورة الثانية</td>
+                <td data-label="الإيرادات المتوقعة"><span class="is-highlight"><span dir="ltr">89,700 – 116,450</span> جنيه</span></td>
+                <td data-label="الخطة التشغيلية">سيولة نقدية قوية، وبداية التحول إلى تصنيع القوالب والميكانيزم الخاص بنا للانفراد بالسوق.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="footnote">الأرقام تقديرية وتعتمد على فرضيات المشروع الحالية.</p>
+      </div>
+    </section>
+
+    <!-- ================= التحديات والحلول ================= -->
+    <section id="risks" class="section theme-dark" aria-labelledby="risks-heading">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 id="risks-heading" class="h2">لكل عقبة حل مدروس.</h2>
+          <p class="lead">هكذا نحمي استثماراتنا بذكاء وعملية.</p>
+        </div>
+        <div class="pairs">
+          <div class="pairs__head" aria-hidden="true"><span>العقبة</span><span>الحل</span></div>
+
+          <article class="pair reveal">
+            <div class="pair__col">
+              <h3>تكلفة الميكانيزم وتعقيده</h3>
+              <p>البحث عن أنسب وأسهل طريقة هندسية لبناء آلية الرش الجانبي دون رفع تكاليف التصنيع في البداية.</p>
+            </div>
+            <div class="pair__col pair__col--solution">
+              <h3>هندسة متدرجة للمنتج</h3>
+              <p>نطلق الدورة الأولى بزجاجات اعتيادية فائقة الفخامة، ونستخدم الكاش الناتج لتطوير الميكانيزم لاحقًا كترقية ثورية.</p>
+            </div>
+          </article>
+
+          <article class="pair reveal">
+            <div class="pair__col">
+              <h3>تفاوت شركات الشحن</h3>
+              <p>سوق متباين بين شركات غالية وبطيئة، مع غياب معايير الأمان وخدمات ما بعد البيع.</p>
+            </div>
+            <div class="pair__col pair__col--solution">
+              <h3>دراسة ميدانية ومقارنة لوجستية</h3>
+              <p>نفحص ونختار الشركاء الأسرع والأكثر التزامًا، لنحفظ هيبة المنتج ونضمن سلامة تسليمه.</p>
+            </div>
+          </article>
+
+          <article class="pair reveal">
+            <div class="pair__col">
+              <h3>زحام الإعلانات وتشتت الانتباه</h3>
+              <p>صعوبة لفت انتباه المشتري وسط آلاف الإعلانات الممولة والمنافسة الشرسة على منصات التواصل.</p>
+            </div>
+            <div class="pair__col pair__col--solution">
+              <h3>مثلث محتوى موحد</h3>
+              <p>نربط جهود المصمم والمونتير والآدمن لحظيًا، لننتج محتوى مرئيًا يعبّر عن توجهات المشتري ويصيب هدفه.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <div class="site-footer__row">
+        <p>المشروع الأول © 2026. رؤية هندسية لتجديد سوق العطور.</p>
+        <nav class="site-footer__links" aria-label="روابط التذييل">
+          <a href="#bottle">الزجاجة</a>
+          <a href="#system">المنظومة</a>
+          <a href="#chemistry">العطر</a>
+          <a href="#finance">الأرقام</a>
+          <a href="#risks">التحديات</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/gallery.js"></script>
+  <script src="js/spray.js"></script>
+  <script src="js/reveal.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
